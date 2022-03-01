@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ProductoCTO</servlet-name>
+        <servlet-class>controlador.ProductoCTO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>MiSesionCTO</servlet-name>
+        <servlet-class>controlador.MiSesionCTO</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductoCTO</servlet-name>
+        <url-pattern>/ProductoCTO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MiSesionCTO</servlet-name>
+        <url-pattern>/MiSesionCTO</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
